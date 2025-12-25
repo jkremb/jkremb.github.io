@@ -20,7 +20,7 @@ function App() {
         <div className="topbar-inner">
           <div className="topbar-left">
             <div className="logo-circle">JK</div>
-            <span className="topbar-name">Julian D. Kremb</span>
+            <span className="topbar-name">Julian D. Kremb · Frontend Engineer</span>
           </div>
           <nav className="topbar-nav">
             <button onClick={() => handleScrollTo('about')}>About</button>
@@ -35,12 +35,16 @@ function App() {
         {/* Hero */}
         <section id="about" className="hero">
           <div className="hero-text">
-            <p className="hero-kicker">Frontend Engineer · Berlin, Germany</p>
-            <h1 className="hero-title">Building user‑focused web experiences</h1>
+            <p className="hero-kicker">Frontend Engineer · React · Angular · TypeScript</p>
+            <h1 className="hero-title">
+              Building user‑focused web experiences
+            </h1>
             <p className="hero-subtitle">
-              Software engineer specializing in Angular and React with TypeScript.
-              Over 6 years of experience delivering scalable applications for leading
-              German automotive clients like Volkswagen and Audi.
+              Frontend engineer with <strong>6+ years</strong> of proven experience delivering scalable applications for leading German automotive clients like <strong>Volkswagen</strong>, Audi and
+              other enterprise clients.
+            </p>
+            <p className="hero-subtitle">
+              Primarily looking for roles in <strong>Angular</strong> or <strong> React </strong>/ <strong> TypeScript frontend</strong>{' '}.
             </p>
             <div className="hero-actions">
               <a
@@ -72,14 +76,11 @@ function App() {
             <div className="hero-card-body">
               <h2>Currently</h2>
               <p>
-                Frontend Software Engineer at IAV, working on automotive webapps
+                Frontend Software Engineer at IAV GmbH, working on automotive webapps
                 and systems.
               </p>
               <div className="hero-tags">
-                <span>Angular</span>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>CI/CD</span>
+                <span>Angular | React | TypeScript | Node.js</span>
               </div>
             </div>
           </div>
@@ -118,9 +119,9 @@ function App() {
             <article className="card">
               <h3>Ways of working</h3>
               <ul>
-                <li>Agile &amp; Kanban teams</li>
-                <li>Clean code &amp; testing mindset</li>
-                <li>Workshops &amp; knowledge sharing</li>
+                <li>Agile &amp; Kanban teams with designers and POs</li>
+                <li>Clean code, testing and CI/CD mindset</li>
+                <li>Workshops, internal talks &amp; mentoring</li>
               </ul>
             </article>
           </div>
@@ -154,25 +155,32 @@ function App() {
                 </header>
                 <ul>
                   <li>
-                    Developed the “Wellness In‑Car App” from scratch for
-                    Volkswagen using Angular, TypeScript and Node.js, launched as
-                    a flagship app for VW’s ID. electric vehicle family.
+                    Developed the “Wellness In‑Car App” from scratch for{' '}
+                    <strong>Volkswagen</strong> using Angular, TypeScript and Node.js,
+                    launched as a flagship app for the VW ID. electric
+                    vehicle family.
                   </li>
                   <li>
-                    Built an in‑house proof‑of‑concept web app for AI‑assisted
-                    agile management using React and TypeScript.
+                    Built an in‑house proof‑of‑concept web app for{' '}
+                    <strong>AI‑assisted agile management</strong> using React and
+                    TypeScript.
                   </li>
                   <li>
-                    Delivered the frontend component of a automobile devices database, as part of a project acquisition hackathon using Vue.js, Tailwind and Typescript.
+                    Delivered the frontend component of an automotive devices
+                    database during a{' '}
+                    <strong>project‑acquisition hackathon</strong> using Vue.js,
+                    Tailwind and TypeScript.
                   </li>
                   <li>
-                    Collaborating in Kanban teams with designers and product
-                    owners to deliver on time with clean coding practices.
+                    Collaborating in Kanban teams with designers and product owners
+                    to deliver on time with clean coding practices.
                   </li>
                   <li>
-                    Led development of a GitLab CI/CD solution that reduced
-                    project bootstrapping time by several days for more than 10
-                    future webapps and ran a CI/CD workshop for 20+ developers.
+                    Led development of a company‑wide <strong>GitLab CI/CD</strong>{' '}
+                    solution, cutting project bootstrapping time by{' '}
+                    <strong>several days</strong> for more than{' '}
+                    <strong>10+</strong> webapps and running a CI/CD workshop for{' '}
+                    <strong>20+ developers</strong>.
                   </li>
                 </ul>
               </div>
@@ -195,13 +203,14 @@ function App() {
                 </header>
                 <ul>
                   <li>
-                    Developed Python scripts to automate Jenkins jobs for a
-                    multi‑corporation data platform; maintained databases and
-                    assisted clients through technical support.
+                    Developed Python scripts to automate{' '}
+                    <strong>Jenkins</strong> jobs for a multi‑corporation data
+                    platform; maintained databases and assisted clients through
+                    technical support.
                   </li>
                   <li>
                     Frontend developer for an automotive webapp in a
-                    Kanban‑structured team, using using Angular, TypeScript and Node.js.
+                    Kanban‑structured team, using Angular, TypeScript and Node.js.
                   </li>
                 </ul>
               </div>
@@ -260,11 +269,12 @@ function App() {
                     Sketch.
                   </li>
                   <li>
-                    Reached Top 10 “Best New Apps” in 110+ countries and Top 100
-                    “Photo &amp; Video” in 55 countries on the iOS App Store.
+                    Reached <strong>Top 10 “Best New Apps”</strong> in 110+ countries
+                    and <strong>Top 100 “Photo &amp; Video”</strong> in 55 countries on
+                    the iOS App Store.
                   </li>
                   <li>
-                    Featured on VentureBeat (
+                    Featured on <strong>VentureBeat</strong> (
                     <a
                       href="https://bit.ly/434s8c8"
                       target="_blank"
