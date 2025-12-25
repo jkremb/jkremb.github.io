@@ -1,206 +1,279 @@
 import './App.css';
 
 function App() {
+  const handleScrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="app">
-      <header className="header">
-        <div>
-          <h1 className="name">Julian D. Kremb</h1>
-          <p className="title">
-            Software Engineer – Angular / React / TypeScript
-          </p>
+      <header className="topbar">
+        <div className="topbar-left">
+          <div className="logo-circle">JK</div>
+          <span className="topbar-name">Julian D. Kremb</span>
         </div>
-        <div className="contact">
-          <p>Berlin, Germany</p>
-          <p>
-            <a href="mailto:julian.dschana.kremb@gmail.com">
-              julian.dschana.kremb@gmail.com
-            </a>
-          </p>
-          <p>
-            <a
-              href="tel:+4917672101533"
-              aria-label="Phone number"
-            >
-              +49 176 72101533
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/julian-kremb-92a787a4/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-          </p>
-        </div>
+        <nav className="topbar-nav">
+          <button onClick={() => handleScrollTo('about')}>About</button>
+          <button onClick={() => handleScrollTo('skills')}>Skills</button>
+          <button onClick={() => handleScrollTo('experience')}>Experience</button>
+          <button onClick={() => handleScrollTo('education')}>Education</button>
+        </nav>
       </header>
 
-      <main className="main">
-        <section className="section">
-          <h2>Summary</h2>
-          <p>
-            Software engineer specializing in Angular or React and TypeScript to
-            build user-focused, scalable web applications. Over 6 years of
-            proven development impact in projects supporting large German
-            automotive clients, such as Volkswagen and Audi, using various agile
-            development strategies. I am always eager to learn new skills and
-            take on new challenges throughout my tech world journey.
-          </p>
+      <main>
+        {/* Hero */}
+        <section id="about" className="hero">
+          <div className="hero-text">
+            <p className="hero-kicker">Frontend Engineer · Berlin, Germany</p>
+            <h1 className="hero-title">
+              Building user‑focused web experiences
+            </h1>
+            <p className="hero-subtitle">
+              Software engineer specializing in Angular and React with TypeScript.
+              Over 6 years of experience delivering scalable applications for
+              leading German automotive clients like Volkswagen and Audi.
+            </p>
+            <div className="hero-actions">
+              <a
+                href="#experience"
+                className="btn btn-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScrollTo('experience');
+                }}
+              >
+                View experience
+              </a>
+              <a
+                href="https://www.linkedin.com/in/julian-kremb-92a787a4/"
+                className="btn btn-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn profile
+              </a>
+            </div>
+          </div>
+          <div className="hero-card">
+            <div className="hero-avatar" aria-hidden="true">
+              {/* Replace gradient circle with an image if you have one:
+                 <img src={avatar} alt="Portrait of Julian Kremb" />
+              */}
+            </div>
+            <div className="hero-card-body">
+              <h2>Currently</h2>
+              <p>
+                Frontend Software Engineer at IAV, working on in‑car experiences
+                and internal AI‑assisted management tooling.
+              </p>
+              <div className="hero-tags">
+                <span>Angular</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>CI/CD</span>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section className="section">
-          <h2>Skills</h2>
-          <div className="skills-grid">
-            <div>
+        {/* Skills */}
+        <section id="skills" className="section section-alt">
+          <div className="section-header">
+            <h2>Skills</h2>
+            <p>
+              A full front‑of‑stack skill set for modern web applications, from
+              UI to deployment pipelines.
+            </p>
+          </div>
+          <div className="cards-grid">
+            <article className="card">
               <h3>Languages &amp; Frameworks</h3>
               <ul>
-                <li>Angular, React, TypeScript, HTML, CSS</li>
-                <li>Ant Design, Jest, Cypress</li>
-                <li>REST API, RPC</li>
+                <li>Angular, React, TypeScript</li>
+                <li>HTML, CSS, Ant Design</li>
+                <li>Jest, Cypress</li>
+                <li>REST APIs, RPC</li>
                 <li>Node.js (background apps)</li>
               </ul>
-            </div>
-            <div>
+            </article>
+
+            <article className="card">
               <h3>Tools &amp; Platforms</h3>
               <ul>
                 <li>Git, GitLab, Jira</li>
                 <li>Docker, Kubernetes</li>
                 <li>Copilot, Figma</li>
               </ul>
-            </div>
+            </article>
+
+            <article className="card">
+              <h3>Ways of working</h3>
+              <ul>
+                <li>Agile &amp; Kanban teams</li>
+                <li>Clean code &amp; testing mindset</li>
+                <li>Workshops &amp; knowledge sharing</li>
+              </ul>
+            </article>
           </div>
         </section>
 
-        <section className="section">
-          <h2>Experience</h2>
-
-          <article className="experience-item">
-            <header>
-              <div>
-                <h3>Frontend Software Engineer</h3>
-                <p className="company">
-                  Ingenieurgesellschaft Auto und Verkehr (IAV)
-                </p>
-              </div>
-              <div className="meta">
-                <span>2019 – present</span>
-                <span>Berlin, Germany</span>
-              </div>
-            </header>
-            <p className="role-note">
-              Working student (2019–2022), Frontend Software Engineer (2022–present)
+        {/* Experience */}
+        <section id="experience" className="section">
+          <div className="section-header">
+            <h2>Experience</h2>
+            <p>
+              Delivering production‑ready software for automotive and academic
+              environments, plus startup experience as a founder.
             </p>
-            <ul>
-              <li>
-                Developed the “Wellness In-Car App” from scratch for Volkswagen
-                using Angular, TypeScript and Node.js (background app). Launched
-                as a flagship app for VW’s ID. family of electric vehicles.
-              </li>
-              <li>
-                Currently developing the frontend of an in-house proof-of-concept
-                web app for AI-assisted agile management systems using React and
-                TypeScript.
-              </li>
-              <li>
-                Collaborated in agile, Kanban-structured teams of engineers,
-                designers and product owners to deliver on time using clean coding
-                practices.
-              </li>
-              <li>
-                Spearheaded development of a comprehensive GitLab CI/CD solution
-                for the company’s web applications, reducing project
-                bootstrapping time by several days for more than 10 future
-                webapps, and led a CI/CD workshop for 20+ developers.
-              </li>
-            </ul>
-          </article>
+          </div>
 
-          <article className="experience-item">
-            <header>
-              <div>
-                <h3>IT Administrator</h3>
-                <p className="company">
-                  Humboldt Universität – Center for British Studies
+          <div className="timeline">
+            <article className="timeline-item">
+              <div className="timeline-dot" />
+              <div className="timeline-content card">
+                <header className="timeline-header">
+                  <div>
+                    <h3>Frontend Software Engineer</h3>
+                    <p className="company">
+                      Ingenieurgesellschaft Auto und Verkehr (IAV)
+                    </p>
+                  </div>
+                  <div className="meta">
+                    <span>2019 – present</span>
+                    <span>Berlin, Germany</span>
+                  </div>
+                </header>
+                <p className="role-note">
+                  Working student (2019–2022), Frontend Software Engineer
+                  (2022–present)
                 </p>
+                <ul>
+                  <li>
+                    Developed the “Wellness In‑Car App” from scratch for
+                    Volkswagen using Angular, TypeScript and Node.js, launched
+                    as a flagship app for VW’s ID. electric vehicle family.
+                  </li>
+                  <li>
+                    Building an in‑house proof‑of‑concept web app for AI‑assisted
+                    agile management using React and TypeScript.
+                  </li>
+                  <li>
+                    Collaborating in Kanban teams with designers and product
+                    owners to deliver on time with clean coding practices.
+                  </li>
+                  <li>
+                    Led development of a GitLab CI/CD solution that reduced
+                    project bootstrapping time by several days for more than 10
+                    future webapps and ran a CI/CD workshop for 20+ developers.
+                  </li>
+                </ul>
               </div>
-              <div className="meta">
-                <span>2019</span>
-                <span>Berlin, Germany</span>
-              </div>
-            </header>
-            <ul>
-              <li>
-                Provided on-site technical support to quickly resolve IT issues.
-              </li>
-              <li>
-                Maintained and updated the institute&apos;s website using a local
-                CMS.
-              </li>
-              <li>
-                Coordinated with the university&apos;s central IT administration to
-                align with institutional policies and standards.
-              </li>
-            </ul>
-          </article>
+            </article>
 
-          <article className="experience-item">
-            <header>
-              <div>
-                <h3>Co‑Founder, Lead Developer &amp; Lead Designer</h3>
-                <p className="company">Paiir UG – Interactive Photo‑Sharing App</p>
+            <article className="timeline-item">
+              <div className="timeline-dot" />
+              <div className="timeline-content card">
+                <header className="timeline-header">
+                  <div>
+                    <h3>IT Administrator</h3>
+                    <p className="company">
+                      Humboldt Universität – Center for British Studies
+                    </p>
+                  </div>
+                  <div className="meta">
+                    <span>2019</span>
+                    <span>Berlin, Germany</span>
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Provided on‑site technical support to quickly resolve IT
+                    issues.
+                  </li>
+                  <li>
+                    Maintained and updated the institute&apos;s website using a
+                    local CMS.
+                  </li>
+                  <li>
+                    Coordinated with central IT administration to align with
+                    institutional standards.
+                  </li>
+                </ul>
               </div>
-              <div className="meta">
-                <span>2014 – 2016</span>
-                <span>Berlin, Germany</span>
+            </article>
+
+            <article className="timeline-item">
+              <div className="timeline-dot" />
+              <div className="timeline-content card">
+                <header className="timeline-header">
+                  <div>
+                    <h3>Co‑Founder, Lead Developer &amp; Designer</h3>
+                    <p className="company">Paiir UG – Interactive Photo‑Sharing App</p>
+                  </div>
+                  <div className="meta">
+                    <span>2014 – 2016</span>
+                    <span>Berlin, Germany</span>
+                  </div>
+                </header>
+                <ul>
+                  <li>
+                    Led iOS development in Objective‑C and product design using
+                    Sketch.
+                  </li>
+                  <li>
+                    Reached Top 10 “Best New Apps” in 110+ countries and Top 100
+                    “Photo &amp; Video” in 55 countries on the iOS App Store.
+                  </li>
+                  <li>
+                    Featured on VentureBeat (
+                    <a
+                      href="https://bit.ly/434s8c8"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      bit.ly/434s8c8
+                    </a>
+                    ).
+                  </li>
+                </ul>
               </div>
-            </header>
-            <ul>
-              <li>
-                Led iOS app development in Objective‑C and product design using
-                Sketch.
-              </li>
-              <li>
-                Achieved Top 10 “Best New Apps” in 110+ countries and Top 100
-                “Photo &amp; Video” in 55 countries on the iOS App Store.
-              </li>
-              <li>
-                Featured on VentureBeat (
-                <a
-                  href="https://bit.ly/434s8c8"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  bit.ly/434s8c8
-                </a>
-                ).
-              </li>
-            </ul>
-          </article>
+            </article>
+          </div>
         </section>
 
-        <section className="section">
-          <h2>Education &amp; Languages</h2>
-          <div className="education">
-            <div>
-              <h3>B.Sc. Business Informatics (Wirtschaftsinformatik)</h3>
-              <p>Technische Universität Berlin, 2022</p>
-            </div>
-            <div className="languages">
+        {/* Education */}
+        <section id="education" className="section section-alt">
+          <div className="section-header">
+            <h2>Education &amp; Languages</h2>
+          </div>
+          <div className="cards-grid">
+            <article className="card">
+              <h3>Education</h3>
+              <p className="edu-title">
+                B.Sc. Business Informatics (Wirtschaftsinformatik)
+              </p>
+              <p>Technische Universität Berlin · 2022</p>
+            </article>
+            <article className="card">
               <h3>Languages</h3>
               <ul>
                 <li>German – Business proficient</li>
                 <li>English – Business proficient</li>
                 <li>Mandarin – Conversational</li>
               </ul>
-            </div>
+            </article>
           </div>
         </section>
       </main>
 
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Julian D. Kremb</p>
+        <p>
+          Built with React, TypeScript &amp; Vite.
+        </p>
       </footer>
     </div>
   );
