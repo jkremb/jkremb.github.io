@@ -296,7 +296,7 @@ function App() {
             <article className="card">
               <h3>Education</h3>
               <p className="edu-title">
-                B.Sc. Business Informatics (Wirtschaftsinformatik)
+                B.Sc. Information Systems Management (Wirtschaftsinformatik)
               </p>
               <p>Technische Universität Berlin · 2022</p>
             </article>
