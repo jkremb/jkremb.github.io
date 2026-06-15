@@ -35,16 +35,15 @@ function App() {
         {/* Hero */}
         <section id="about" className="hero">
           <div className="hero-text">
-            <p className="hero-kicker">Frontend Engineer · React · Angular · TypeScript</p>
+            <p className="hero-kicker">Full-Stack Engineer · React · Angular · TypeScript · Node.js</p>
             <h1 className="hero-title">
               Building user‑focused web experiences
             </h1>
             <p className="hero-subtitle">
-              Frontend engineer with <strong>6+ years</strong> of proven experience delivering scalable applications for leading German automotive clients like <strong>Volkswagen</strong>, Audi and
-              other enterprise clients.
+              Full-stack engineer with <strong>6+ years</strong> of proven experience building scalable web products in React, Angular, TypeScript and Node.js across cross-functional teams, shipping production features to millions of users.
             </p>
             <p className="hero-subtitle">
-              Primarily looking for roles in <strong>Angular</strong> or <strong> React </strong>/ <strong> TypeScript frontend</strong>{' '}.
+              Experienced across the stack with automotive enterprise clients including <strong>Volkswagen</strong> and <strong>Audi</strong>.
             </p>
             <div className="hero-actions">
               <a
@@ -76,11 +75,11 @@ function App() {
             <div className="hero-card-body">
               <h2>Currently</h2>
               <p>
-                Frontend Software Engineer at IAV GmbH, working on automotive webapps
-                and systems.
+                Frontend Software Engineer at IAV GmbH, building automotive webapps
+                and flagship wellness applications for Volkswagen and Audi.
               </p>
               <div className="hero-tags">
-                <span>Angular | React | TypeScript | Node.js</span>
+                <span>Angular | React | TypeScript | Node.js | RxJS | NgRx</span>
               </div>
             </div>
           </div>
@@ -103,7 +102,7 @@ function App() {
                 <li>HTML, CSS, Ant Design</li>
                 <li>Jest, Cypress</li>
                 <li>REST APIs, RPC</li>
-                <li>Node.js (background apps)</li>
+                <li>Node.js, RxJS, NgRx</li>
               </ul>
             </article>
 
@@ -112,7 +111,7 @@ function App() {
               <ul>
                 <li>Git, GitLab, Jira</li>
                 <li>Docker, Kubernetes</li>
-                <li>Copilot, Figma</li>
+                <li>Copilot, Codex, Figma</li>
               </ul>
             </article>
 
@@ -155,32 +154,31 @@ function App() {
                 </header>
                 <ul>
                   <li>
-                    Developed the “Wellness In‑Car App” from scratch for{' '}
-                    <strong>Volkswagen</strong> using Angular, TypeScript and Node.js,
-                    launched as a flagship app for the VW ID. electric
-                    vehicle family.
+                    Primary developer on the <strong>Wellness In‑Car App</strong> for{' '}
+                    <strong>Volkswagen</strong>, a flagship wellness application shipped with the ID. electric
+                    vehicle family, built in Angular, TypeScript for frontend, and Node.js and RPC for the backend API (Backend-for-frontend).
                   </li>
                   <li>
-                    Built an in‑house proof‑of‑concept web app for{' '}
-                    <strong>AI‑assisted agile management</strong> using React and
-                    TypeScript.
+                    Took full ownership of the <strong>Audi STO MIB3 webapp</strong> (Angular, TypeScript), responsible for maintenance, feature development and deployment.
                   </li>
                   <li>
-                    Delivered the frontend component of an automotive devices
-                    database during a{' '}
-                    <strong>project‑acquisition hackathon</strong> using Vue.js,
-                    Tailwind and TypeScript.
+                    Inherited the <strong>EcoForecast</strong> webapp following the original developer&apos;s departure, stabilising and refactoring a critically defective codebase over 2 months to resolve outstanding client concerns and bring the project to a successful close.
                   </li>
                   <li>
-                    Collaborating in Kanban teams with designers and product owners
-                    to deliver on time with clean coding practices.
+                    Brought in as frontend consultant on <strong>VoiceMind</strong>, an internal AI in‑car assistant POC. Refactored the entire frontend from a single unstructured JS file into a modern React application, establishing proper component architecture and development standards for the team.
+                  </li>
+                  <li>
+                    Developed new features and maintained the <strong>EcoCharge</strong> webapp (Angular, TypeScript) for Volkswagen, a charging management tool for EV fleets.
+                  </li>
+                  <li>
+                    Part of the team that developed <strong>TicketPilot</strong>, an internal AI‑powered ticketing application, using React.
+                  </li>
+                  <li>
+                    Built the frontend of a fullstack system within one week during an internal hackathon using Vue.js, as part of a client acquisition effort.
                   </li>
                   <li>
                     Led development of a company‑wide <strong>GitLab CI/CD</strong>{' '}
-                    solution, cutting project bootstrapping time by{' '}
-                    <strong>several days</strong> for more than{' '}
-                    <strong>10+</strong> webapps and running a CI/CD workshop for{' '}
-                    <strong>20+ developers</strong>.
+                    solution for the expanding portfolio of web applications and conducted a workshop on CI/CD best practices for a team of over <strong>20 developers</strong>.
                   </li>
                 </ul>
               </div>
@@ -192,7 +190,7 @@ function App() {
               <div className="timeline-content card">
                 <header className="timeline-header">
                   <div>
-                    <h3>Working Student – Frontend Development</h3>
+                    <h3>Mobile and Webapps Engineering Working Student</h3>
                     <p className="company">
                       Ingenieurgesellschaft Auto und Verkehr (IAV)
                     </p>
@@ -203,14 +201,13 @@ function App() {
                 </header>
                 <ul>
                   <li>
-                    Developed Python scripts to automate{' '}
-                    <strong>Jenkins</strong> jobs for a multi‑corporation data
-                    platform; maintained databases and assisted clients through
-                    technical support.
+                    Wrote and maintained Python scripts to query and manage data in the VW Group&apos;s central user database, executed via automated Jenkins CI pipelines.
                   </li>
                   <li>
-                    Frontend developer for an automotive webapp in a
-                    Kanban‑structured team, using Angular, TypeScript and Node.js.
+                    Responsible for unit and end‑to‑end testing across a suite of VW webapps, using Jest and Cypress in an Angular and Typescript stack.
+                  </li>
+                  <li>
+                    Spearheaded development of a comprehensive Gitlab CI/CD solution for the company&apos;s expanding portfolio of web applications and conducted a workshop on CI/CD best practices for a team of over 20 developers, providing keynotes, hands‑on coding assignments, and in‑depth training.
                   </li>
                 </ul>
               </div>
@@ -308,7 +305,7 @@ function App() {
               <ul>
                 <li>German – Business proficient</li>
                 <li>English – Business proficient</li>
-                <li>Mandarin – Conversational</li>
+                <li>Mandarin – Mother tongue/Conversational fluency</li>
               </ul>
             </article>
           </div>
